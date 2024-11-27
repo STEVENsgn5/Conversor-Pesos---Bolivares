@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.calculadora {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px; /* Valor por defecto, puede ser modificado desde el admin */
+    background-color: rgba(255, 255, 255, 1); /* Valor por defecto, ajustado en script.js */
+    margin: 20px auto; /* Añadido margen superior e inferior */
+    text-align: center;
+    opacity: 1; /* Valor por defecto, ajustado en script.js */
+    box-shadow: 0 4px 8px #000000; /* Valor por defecto, ajustado en script.js */
+    transition: box-shadow 0.3s, border-radius 0.3s, opacity 0.3s, background-color 0.3s;
+}
+
+.calculadora h2, .calculadora p {
+    margin: 0 0 10px 0;
+    color: #0057b7; /* Valor por defecto, ajustado en script.js */
+}
+
+.calculadora h2 {
+    font-weight: 700;
+}
+
+.calculadora p {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Este valor será sobrescrito por script.js según 'vertical_spacing' */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Aseguramos que las casillas ocupen el 100% del ancho disponible */
+}
+
+.form-group label {
+    color: #333; /* Valor por defecto, ajustado en script.js */
+    font-weight: 500;
+    margin-bottom: 5px; /* Añadido margen para separar label del input */
+}
+
+/* Estilos para las tasas de cambio */
+.form-group .rate-ves,
+.form-group .rate-usd {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%; /* Aseguramos que las casillas ocupen el 100% del ancho disponible */
+    padding: 10px;
+    border-radius: 10px; /* Ajustado en script.js según 'casilla_border_radius' */
+    border: 1px solid #ccc;
+    background-color: rgba(230, 240, 255, 1); /* Valor por defecto, ajustado en script.js */
+    color: #0057b7; /* Valor por defecto, ajustado en script.js */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: left; /* Valor por defecto, ajustado en script.js */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.form-group input:focus {
+    background-color: rgba(230, 240, 255, 0.8);
+    border-color: #0057b7;
+    outline: none;
+}
+
+#total-ves, #total-usd {
+    text-align: left; /* Valor por defecto, ajustado en script.js */
+}
+
+#convertir {
+    width: 100%; /* Aseguramos que el botón ocupe el 100% del ancho disponible */
+    padding: 10px;
+    background-color: #0057b7; /* Valor por defecto, ajustado en script.js */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+#convertir:hover {
+    background-color: #003f8c; /* Color de hover, ajustado en script.js */
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .calculadora {
+        padding: 15px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+    }
+
+    #convertir {
+        font-size: 14px;
+    }
+}
