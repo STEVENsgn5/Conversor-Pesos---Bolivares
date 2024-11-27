@@ -153,21 +153,9 @@ ConversorColgiros/
 
 ---
 
-## 📚 Recursos Adicionales
-
-- [Documentación de WordPress](https://developer.wordpress.org/plugins/)
-- [Guía de Shortcodes en WordPress](https://wordpress.org/support/article/shortcodes/)
-- [API de WordPress para Plugins](https://developer.wordpress.org/plugins/)
-
 ---
 
 Si tienes sugerencias o deseas contribuir al desarrollo del plugin, no dudes en abrir un *issue* o enviar un *pull request* en el repositorio de GitHub.
-
----
-
-# License
-
-Este proyecto está licenciado bajo la Licencia GPL v2 o posterior. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
 
